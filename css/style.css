@@ -1,0 +1,52 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body, html {
+     height: 100%;
+     margin: 0;
+     font-family: Arial, Helvetica, sans-serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ #backgroundVideo {
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     min-width: 100%; 
+     min-height: 100%;
+     z-index: -1; /* Place video behind the content */
+ }
+ 
+ .content {
+     z-index: 1; /* Ensure content appears above the video */
+ }
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
